@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: green;
+      }
+      a:hover {
+        color: pink;
+      }
+      a:active {
+        color: orange;
+      }
+
+      blockquote::before,
+      blockquote::after {
+        content: '"';
+        font-size: 24px;
+        font-style: italic;
+        font-weight: bold;
+      }
+
+      p::first-letter {
+        font-size: 34px;
+        font-weight: bold;
+        color: sandybrown;
+      }
+
+      /* Ini merupakan css untuk tag P berisi tentang lineheight*/
+
+      p.lineheight {
+        line-height: 2;
+        border-style: solid;
+        border-color: brown;
+      }
+      p.lineheight2 {
+        line-height: 200%;
+        border-style: solid;
+        border-color: brown;
+      }
+      p.lineheight3 {
+        line-height: 2em;
+        border-style: solid;
+        border-color: brown;
+      }
+      /* Ini merupakan css untuk tag P berisi tentang Indent*/
+
+      .indent {
+        text-indent: 2em;
+        border-style: solid;
+        border-color: cyan;
+      }
+      .indent2 {
+        text-indent: 25%;
+        border-style: solid;
+        border-color: cyan;
+      }
+      .indent3 {
+        text-indent: -35px;
+        border-style: solid;
+        border-color: cyan;
+      }
+      /* Ini merupakan css untuk tag P berisi tentang Text-align*/
+      p.align {
+        text-align: left;
+        border-style: solid;
+        border-color: pink;
+      }
+      p.align2 {
+        text-align: right;
+        border-style: solid;
+        border-color: pink;
+      }
+      p.align3 {
+        text-align: center;
+        border-style: solid;
+        border-color: pink;
+      }
+      p.align4 {
+        text-align: justify;
+        border-style: solid;
+        border-color: pink;
+      }
+      /* Ini merupakan css untuk tag P berisi tentang font*/
+
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;500&display=swap");
+
+      @font-face {
+        font-family: "Dicoding Font";
+        src: url("FILE-FONT.TTF");
+      }
+
+      /* Belajar menperdalam mengenai box dimension */
+
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: yellow;
+      }
+
+      .box > p {
+        height: 75%;
+        width: 75%;
+        background-color: yellowgreen;
+      }
+
+      /* belejar tentang limiting dimension */
+
+      .content {
+        max-width: 800px;
+        height: 400px;
+        margin: 0 auto;
+        background-color: deeppink;
+      }
+
+      .content > p {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#">Test Css Link </a>
+
+    <blockquote>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, esse?
+      Ipsa, quibusdam veritatis! Maxime alias quas ab, sapiente obcaecati,
+      distinctio porro recusandae possimus tempore asperiores, quae delectus
+      deserunt officiis! Rerum.
+    </blockquote>
+
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus rem veniam
+      ea dignissimos corrupti, molestias doloribus assumenda necessitatibus
+      saepe iste fuga quis libero? Commodi veniam laboriosam quo cupiditate
+      repudiandae! Enim?
+    </p>
+
+    <p class="lineheight">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero,
+      quasi corporis unde dolore, sed minus commodi possimus cupiditate
+      voluptatem at molestias repudiandae tenetur. Amet minima quos velit
+      aperiam nam.
+    </p>
+    <p class="lineheight2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero,
+      quasi corporis unde dolore, sed minus commodi possimus cupiditate
+      voluptatem at molestias repudiandae tenetur. Amet minima quos velit
+      aperiam nam.
+    </p>
+    <p class="lineheight3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos libero,
+      quasi corporis unde dolore, sed minus commodi possimus cupiditate
+      voluptatem at molestias repudiandae tenetur. Amet minima quos velit
+      aperiam nam.
+    </p>
+
+    <p class="indent">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi
+      odio, quia maxime officiis nihil similique et inventore! Nobis quasi animi
+      qui nostrum porro reprehenderit laboriosam totam unde adipisci
+      repudiandae!
+    </p>
+    <p class="indent2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi
+      odio, quia maxime officiis nihil similique et inventore! Nobis quasi animi
+      qui nostrum porro reprehenderit laboriosam totam unde adipisci
+      repudiandae!
+    </p>
+    <p class="indent3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio animi
+      odio, quia maxime officiis nihil similique et inventore! Nobis quasi animi
+      qui nostrum porro reprehenderit laboriosam totam unde adipisci
+      repudiandae!
+    </p>
+
+    <p class="align">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in possimus
+      dolor distinctio consequatur, atque debitis odit fugit praesentium natus
+      impedit eius consequuntur laudantium maiores ex consectetur nesciunt illum
+      ut?
+    </p>
+    <p class="align2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in possimus
+      dolor distinctio consequatur, atque debitis odit fugit praesentium natus
+      impedit eius consequuntur laudantium maiores ex consectetur nesciunt illum
+      ut?
+    </p>
+    <p class="align3">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in possimus
+      dolor distinctio consequatur, atque debitis odit fugit praesentium natus
+      impedit eius consequuntur laudantium maiores ex consectetur nesciunt illum
+      ut?
+    </p>
+    <p class="align4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque in possimus
+      dolor distinctio consequatur, atque debitis odit fugit praesentium natus
+      impedit eius consequuntur laudantium maiores ex consectetur nesciunt illum
+      ut?
+    </p>
+
+    <div class="box">
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem sit quod
+        officia aut dolorum, voluptate repudiandae eaque ipsum, nisi dolores
+        nesciunt quas quidem ullam asperiores obcaecati quasi eveniet aliquid
+        reiciendis.
+      </p>
+
+      <div class="content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+          magnam provident nesciunt accusantium ullam iusto deserunt non
+          recusandae mollitia ut quo. Accusantium tenetur inventore reiciendis
+          architecto sit placeat perspiciatis nisi?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
